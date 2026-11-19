@@ -6,24 +6,29 @@ export default function HpTop() {
   return (
     <>
       <section className={styles.hero}>
-        <div className={styles.inner}>
-          <p className={styles.heroSub}>中小企業・個人事業主の会計パートナー</p>
-          <h1 className={styles.heroTitle}>
-            数字の不安をなくして、
-            <br />
-            本業に集中できる毎日を。
-          </h1>
-          <p className={styles.heroText}>
-            税務顧問から決算申告、会社設立、相続まで。経営の身近な相談相手として、事業の成長を支えます。
-          </p>
-          <div className={styles.heroActions}>
-            <Link href="/hp/contact/" className={styles.btnPrimary}>
-              無料相談を予約する
-            </Link>
-            <Link href="/hp/services/" className={styles.btnGhost}>
-              サービスを見る
-            </Link>
+        <div className={`${styles.inner} ${styles.heroInner}`}>
+          <div className={styles.heroBody}>
+            <p className={styles.heroSub}>中小企業・個人事業主の会計パートナー</p>
+            <h1 className={styles.heroTitle}>
+              数字の不安をなくして、
+              <br />
+              本業に集中できる毎日を。
+            </h1>
+            <p className={styles.heroText}>
+              税務顧問から決算申告、会社設立、相続まで。経営の身近な相談相手として、事業の成長を支えます。
+            </p>
+            <div className={styles.heroActions}>
+              <Link href="/hp/contact/" className={styles.btnPrimary}>
+                無料相談を予約する
+              </Link>
+              <Link href="/hp/services/" className={styles.btnGhost}>
+                サービスを見る
+              </Link>
+            </div>
           </div>
+          <span className={styles.heroLetter} aria-hidden="true">
+            A
+          </span>
         </div>
       </section>
 
