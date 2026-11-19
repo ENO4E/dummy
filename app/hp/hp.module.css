@@ -30,6 +30,16 @@
 .heroTitle { font-size: clamp(1.7rem, 4.5vw, 2.6rem); line-height: 1.4; margin: 0 0 20px; }
 .heroText { color: var(--muted); max-width: 560px; margin: 0 0 32px; }
 .heroActions { display: flex; gap: 12px; flex-wrap: wrap; }
+.heroInner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.heroBody { flex: 1; min-width: 0; }
+.heroLetter {
+  flex-shrink: 0; font-size: clamp(8rem, 22vw, 18rem); font-weight: 800; line-height: 1;
+  color: var(--hp-accent); opacity: 0.9; user-select: none;
+}
+@media (max-width: 640px) {
+  .heroInner { flex-direction: column-reverse; align-items: flex-start; }
+  .heroLetter { font-size: 7rem; }
+}
 
 .btnPrimary, .btnGhost, .btnLight {
   display: inline-block; padding: 12px 24px; border-radius: 8px; font-weight: 700;
